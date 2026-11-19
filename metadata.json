@@ -1,0 +1,8 @@
+{
+  "name": "Mustafai School System",
+  "description": "White-label School Management System & Learning Management System (LMS) featuring multi-role portals, customizable school branding, courses, assignments, auto-graded quizzes, attendance, fee invoicing, and a server-side Gemini AI analyst.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

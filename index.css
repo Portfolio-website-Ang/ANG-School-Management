@@ -1,0 +1,123 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --brand-primary: #0f4c81;
+  --brand-primary-hover: #0a365c;
+  --brand-soft: rgba(15, 76, 129, 0.1);
+  --brand-accent: #d97706;
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+.dark {
+  --brand-soft: rgba(59, 130, 246, 0.16);
+}
+
+html {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono, .tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.brand-bg {
+  background-color: var(--brand-primary);
+}
+
+.brand-bg:hover {
+  background-color: var(--brand-primary-hover);
+}
+
+.brand-text {
+  color: var(--brand-primary);
+}
+
+.dark .brand-text {
+  color: #60a5fa;
+}
+
+.brand-soft-bg {
+  background-color: var(--brand-soft);
+}
+
+.brand-border {
+  border-color: var(--brand-primary);
+}
+
+.brand-ring:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  aside,
+  header,
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only-card {
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+  }
+
+  body.printing-report #root {
+    display: none !important;
+  }
+
+  body.printing-report .report-print-portal {
+    position: static !important;
+    inset: auto !important;
+    background: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  .print-sheet {
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  .print-sheet thead {
+    display: table-header-group;
+  }
+
+  .print-sheet tr,
+  .print-avoid-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}

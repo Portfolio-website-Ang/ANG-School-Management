@@ -1,0 +1,933 @@
+{
+  "adminPasscode": {
+    "salt": "c7fa7a5baacefe2888aaf83c823885b9",
+    "hash": "da1ad354778114f66f356bdd51cd0c808275587e73c51c5cca19f61a349cd92bf8d31e91121dd7c448f3f29e88475dda0b602781861ee8bd6c7816dc6a5f61d6"
+  },
+  "db": {
+    "branding": {
+      "schoolName": "Mustafai School System",
+      "tagline": "Excellence in Character, Science & Digital Learning",
+      "affiliationCode": "REG-MSS-2026",
+      "academicYear": "2026–2027",
+      "currencySymbol": "$",
+      "contactEmail": "admissions@mustafaischool.edu",
+      "contactPhone": "+92 300 555 0194",
+      "address": "14 Knowledge Avenue, Model Town Campus",
+      "primaryColor": "#0F4C81",
+      "accentColor": "#D97706",
+      "logoDataUrl": "/assets/branding/ang-app-icon.png",
+      "crestStyle": "shield",
+      "fontPairing": "jakarta",
+      "enabledModules": {
+        "courses": true,
+        "assessments": true,
+        "attendance": true,
+        "fees": true,
+        "schedule": true,
+        "aiAssistant": true
+      }
+    },
+    "students": [
+      {
+        "id": "s1",
+        "rollNo": "MSS-5A-01",
+        "name": "Alice Johnson",
+        "grade": 5,
+        "class": "5A",
+        "guardianName": "Robert Johnson",
+        "guardianPhone": "+1 (555) 210-4411",
+        "guardianEmail": "r.johnson@example.com",
+        "enrolledDate": "2025-08-18",
+        "status": "Active"
+      },
+      {
+        "id": "s2",
+        "rollNo": "MSS-5A-02",
+        "name": "Bilal Ahmed",
+        "grade": 5,
+        "class": "5A",
+        "guardianName": "Tariq Ahmed",
+        "guardianPhone": "+92 321 440 8821",
+        "guardianEmail": "tariq.ahmed@example.com",
+        "enrolledDate": "2025-08-18",
+        "status": "Active"
+      },
+      {
+        "id": "s3",
+        "rollNo": "MSS-5A-03",
+        "name": "Zara Siddiqui",
+        "grade": 5,
+        "class": "5A",
+        "guardianName": "Nadia Siddiqui",
+        "guardianPhone": "+92 333 912 3304",
+        "guardianEmail": "nadia.siddiqui@example.com",
+        "enrolledDate": "2025-08-19",
+        "status": "Active"
+      },
+      {
+        "id": "s4",
+        "rollNo": "MSS-6B-01",
+        "name": "Diana Miller",
+        "grade": 6,
+        "class": "6B",
+        "guardianName": "Claire Miller",
+        "guardianPhone": "+1 (555) 884-1920",
+        "guardianEmail": "claire.miller@example.com",
+        "enrolledDate": "2024-08-14",
+        "status": "Active"
+      },
+      {
+        "id": "s5",
+        "rollNo": "MSS-6B-02",
+        "name": "Hamza Raza",
+        "grade": 6,
+        "class": "6B",
+        "guardianName": "Imran Raza",
+        "guardianPhone": "+92 301 774 1120",
+        "guardianEmail": "imran.raza@example.com",
+        "enrolledDate": "2024-08-14",
+        "status": "Active"
+      },
+      {
+        "id": "s6",
+        "rollNo": "MSS-7C-01",
+        "name": "Fiona Garcia",
+        "grade": 7,
+        "class": "7C",
+        "guardianName": "Marco Garcia",
+        "guardianPhone": "+1 (555) 493-2201",
+        "guardianEmail": "m.garcia@example.com",
+        "enrolledDate": "2023-08-15",
+        "status": "Active"
+      },
+      {
+        "id": "s7",
+        "rollNo": "MSS-7C-02",
+        "name": "Umar Farooq",
+        "grade": 7,
+        "class": "7C",
+        "guardianName": "Salman Farooq",
+        "guardianPhone": "+92 345 201 9981",
+        "guardianEmail": "salman.f@example.com",
+        "enrolledDate": "2023-08-15",
+        "status": "Active"
+      },
+      {
+        "id": "s8",
+        "rollNo": "MSS-8A-01",
+        "name": "Ayesha Khan",
+        "grade": 8,
+        "class": "8A",
+        "guardianName": "Saima Khan",
+        "guardianPhone": "+92 300 612 7734",
+        "guardianEmail": "saima.khan@example.com",
+        "enrolledDate": "2022-08-12",
+        "status": "Active"
+      }
+    ],
+    "teachers": [
+      {
+        "id": "t1",
+        "employeeId": "FAC-101",
+        "name": "Prof. Sarah Jenkins",
+        "email": "s.jenkins@mustafaischool.edu",
+        "subjectSpecialty": "Physics & Applied Science",
+        "assignedClasses": [
+          "5A",
+          "6B"
+        ],
+        "qualification": "M.Sc. Physics, B.Ed."
+      },
+      {
+        "id": "t2",
+        "employeeId": "FAC-102",
+        "name": "Mr. Daniyal Malik",
+        "email": "d.malik@mustafaischool.edu",
+        "subjectSpecialty": "Computer Science & Robotics",
+        "assignedClasses": [
+          "6B",
+          "7C",
+          "8A"
+        ],
+        "qualification": "BS Computer Science"
+      },
+      {
+        "id": "t3",
+        "employeeId": "FAC-103",
+        "name": "Ms. Elena Rostova",
+        "email": "e.rostova@mustafaischool.edu",
+        "subjectSpecialty": "Mathematics & Geometry",
+        "assignedClasses": [
+          "5A",
+          "7C",
+          "8A"
+        ],
+        "qualification": "M.Phil. Mathematics"
+      }
+    ],
+    "courses": [
+      {
+        "id": "c1",
+        "code": "SCI-501",
+        "title": "Optics, Waves & Physical Science",
+        "grade": 5,
+        "className": "5A",
+        "teacherId": "t1",
+        "teacherName": "Prof. Sarah Jenkins",
+        "category": "Natural Sciences",
+        "description": "Foundational exploration of light refraction, prism dispersion, acoustic waves, and scientific lab measurement.",
+        "coverKey": "science",
+        "lessons": [
+          {
+            "id": "l101",
+            "title": "Light Refraction & Glass Prisms",
+            "durationMinutes": 25,
+            "type": "Reading",
+            "summary": "Understand how white light bends at media boundaries and separates into the visible ROYGBIV spectrum.",
+            "content": "When a beam of white light travels from air into a denser medium such as crown glass, its speed decreases and the ray bends toward the normal line.\n\nBecause each wavelength slows down by a slightly different refractive index (violet bends most, red bends least), a triangular prism disperses white light into seven distinct spectral bands.\n\nKey Takeaway: Refraction depends on the angle of incidence and the optical density (refractive index n) of the material.",
+            "resourceLabel": "Optics Lab Worksheet 1.pdf",
+            "completedByStudentIds": [
+              "s1",
+              "s2"
+            ]
+          },
+          {
+            "id": "l102",
+            "title": "Spectrometer Calibration & Angular Scales",
+            "durationMinutes": 35,
+            "type": "Lab",
+            "summary": "Step-by-step virtual lab protocol for aligning a collimator and reading vernier prism angles.",
+            "content": "Before measuring the angle of minimum deviation, align the telescope crosshairs with the illuminated collimator slit.\n\n1. Level the prism table using the three leveling screws.\n2. Place the equilateral glass prism at the center.\n3. Record the incident ray reading on the main circular degree scale.\n4. Rotate the telescope until the refracted spectrum aligns clearly.",
+            "resourceLabel": "Spectrometer Setup Guide.pdf",
+            "completedByStudentIds": [
+              "s1"
+            ]
+          },
+          {
+            "id": "l103",
+            "title": "Sound Waves, Frequency & Amplitude",
+            "durationMinutes": 20,
+            "type": "Video",
+            "summary": "Visualizing longitudinal compressions, pitch vs. frequency (Hz), and loudness.",
+            "content": "Sound travels as mechanical longitudinal waves through solids, liquids, and gases. High frequency produces high pitch measured in Hertz (Hz), while higher wave amplitude increases acoustic energy and perceived loudness in decibels (dB).",
+            "resourceLabel": "Wave Mechanics Slides.pptx",
+            "completedByStudentIds": []
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "code": "CS-601",
+        "title": "Computational Thinking & Algorithms",
+        "grade": 6,
+        "className": "6B",
+        "teacherId": "t2",
+        "teacherName": "Mr. Daniyal Malik",
+        "category": "Computer Science",
+        "description": "Core algorithmic logic, binary systems, flowcharts, and modular problem solving for young engineers.",
+        "coverKey": "cs",
+        "lessons": [
+          {
+            "id": "l201",
+            "title": "Binary Representation & Logic Gates",
+            "durationMinutes": 30,
+            "type": "Reading",
+            "summary": "How transistors represent 0 and 1 states and combine into AND, OR, and NOT logic circuits.",
+            "content": "Every digital computer processes information using base-2 binary digits (bits). Eight bits form one byte, capable of representing 256 distinct values.\n\nLogic gates evaluate boolean inputs:\n• AND gate outputs 1 only when all inputs are 1.\n• OR gate outputs 1 if at least one input is 1.\n• NOT gate inverts the incoming signal.",
+            "resourceLabel": "Boolean Truth Tables.pdf",
+            "completedByStudentIds": [
+              "s4",
+              "s1"
+            ]
+          },
+          {
+            "id": "l202",
+            "title": "Decomposing Problems with Flowcharts",
+            "durationMinutes": 25,
+            "type": "Lab",
+            "summary": "Designing branching decision trees and loop structures before writing code.",
+            "content": "Good software engineers decompose complex tasks into smaller predictable steps. Use ovals for Start/End, rectangles for Process steps, and diamonds for Conditional Decisions.",
+            "resourceLabel": "Algorithm Design Kit.pdf",
+            "completedByStudentIds": []
+          }
+        ]
+      },
+      {
+        "id": "c3",
+        "code": "MATH-504",
+        "title": "Geometry, Ratios & Golden Proportions",
+        "grade": 5,
+        "className": "5A",
+        "teacherId": "t3",
+        "teacherName": "Ms. Elena Rostova",
+        "category": "Mathematics",
+        "description": "Mastering polygons, compass constructions, proportional reasoning, and geometric symmetry.",
+        "coverKey": "math",
+        "lessons": [
+          {
+            "id": "l301",
+            "title": "Polyhedra, Faces, Edges & Euler Formula",
+            "durationMinutes": 30,
+            "type": "Reading",
+            "summary": "Exploring Platonic solids and verifying V - E + F = 2 across 3D geometric structures.",
+            "content": "A convex polyhedron satisfies Leonhard Euler’s remarkable invariant: Vertices (V) minus Edges (E) plus Faces (F) always equals 2.\n\nFor a cube: V = 8, E = 12, F = 6 -> 8 - 12 + 6 = 2.\nFor an icosahedron: V = 12, E = 30, F = 20 -> 12 - 30 + 20 = 2.",
+            "resourceLabel": "Platonic Solids Nets.pdf",
+            "completedByStudentIds": [
+              "s1",
+              "s3"
+            ]
+          },
+          {
+            "id": "l302",
+            "title": "Fibonacci Sequences & Golden Ratio (1:1.618)",
+            "durationMinutes": 25,
+            "type": "Video",
+            "summary": "Connecting number patterns to architectural spirals and proportional scale models.",
+            "content": "In the Fibonacci sequence (1, 1, 2, 3, 5, 8, 13, 21...), dividing each term by the previous term approaches Phi (1.618). Architects and biologists encounter this proportion in spiral shells and classical facades.",
+            "resourceLabel": "Compass Construction Sheet.pdf",
+            "completedByStudentIds": []
+          }
+        ]
+      }
+    ],
+    "assignments": [
+      {
+        "id": "a1",
+        "courseId": "c1",
+        "title": "Prism Dispersion Observation Report",
+        "className": "5A",
+        "dueDate": "2026-11-20",
+        "maxMarks": 25,
+        "instructions": "Explain why violet light refracts at a steeper angle than red light inside a glass prism. Include one real-world example of dispersion.",
+        "createdBy": "Prof. Sarah Jenkins"
+      },
+      {
+        "id": "a2",
+        "courseId": "c3",
+        "title": "Euler Formula Verification Table",
+        "className": "5A",
+        "dueDate": "2026-11-23",
+        "maxMarks": 20,
+        "instructions": "Calculate V, E, and F for a tetrahedron, octahedron, and dodecahedron, showing V - E + F = 2 for each.",
+        "createdBy": "Ms. Elena Rostova"
+      },
+      {
+        "id": "a3",
+        "courseId": "c2",
+        "title": "Truth Table for 2-Input Alarm Circuit",
+        "className": "6B",
+        "dueDate": "2026-11-19",
+        "maxMarks": 30,
+        "instructions": "Construct an AND/OR logic expression and complete truth table for a smart classroom door sensor.",
+        "createdBy": "Mr. Daniyal Malik"
+      }
+    ],
+    "submissions": [
+      {
+        "id": "sub1",
+        "assignmentId": "a1",
+        "studentId": "s1",
+        "submittedAt": "2026-11-15",
+        "content": "Violet light has a shorter wavelength (~400 nm) and experiences a higher refractive index in crown glass than red light (~700 nm), causing greater bending. Rainbows in mist demonstrate natural dispersion.",
+        "attachmentName": "alice_optics_diagram.pdf",
+        "score": 24,
+        "feedback": "Clear explanation of wavelength-dependent refractive index and crisp real-world example.",
+        "status": "Graded"
+      },
+      {
+        "id": "sub2",
+        "assignmentId": "a1",
+        "studentId": "s2",
+        "submittedAt": "2026-11-16",
+        "content": "Glass slows down violet waves more than red waves so the spectrum fans out.",
+        "attachmentName": "bilal_prism_notes.docx",
+        "status": "Submitted"
+      }
+    ],
+    "quizzes": [
+      {
+        "id": "q1",
+        "courseId": "c1",
+        "title": "Optics & Light Checkpoint Quiz",
+        "className": "5A",
+        "durationMinutes": 10,
+        "dueDate": "2026-11-21",
+        "questions": [
+          {
+            "id": "qq1",
+            "prompt": "Which color in the visible spectrum bends the MOST when passing through a glass prism?",
+            "options": [
+              "Red",
+              "Yellow",
+              "Green",
+              "Violet"
+            ],
+            "correctIndex": 3,
+            "points": 5
+          },
+          {
+            "id": "qq2",
+            "prompt": "What happens to the speed of light as it enters glass from air?",
+            "options": [
+              "It increases",
+              "It decreases",
+              "It stays constant",
+              "It drops to zero"
+            ],
+            "correctIndex": 1,
+            "points": 5
+          },
+          {
+            "id": "qq3",
+            "prompt": "Which instrument is used in the physics lab to measure prism angles accurately?",
+            "options": [
+              "Barometer",
+              "Spectrometer",
+              "Ammeter",
+              "Calorimeter"
+            ],
+            "correctIndex": 1,
+            "points": 5
+          }
+        ]
+      },
+      {
+        "id": "q2",
+        "courseId": "c3",
+        "title": "Polyhedra & Proportions Quiz",
+        "className": "5A",
+        "durationMinutes": 10,
+        "dueDate": "2026-11-22",
+        "questions": [
+          {
+            "id": "qq4",
+            "prompt": "According to Euler’s Formula for convex polyhedra, what does V - E + F equal?",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "4"
+            ],
+            "correctIndex": 2,
+            "points": 5
+          },
+          {
+            "id": "qq5",
+            "prompt": "The Golden Ratio (Phi) is approximately equal to:",
+            "options": [
+              "1.414",
+              "1.618",
+              "2.718",
+              "3.142"
+            ],
+            "correctIndex": 1,
+            "points": 5
+          }
+        ]
+      }
+    ],
+    "quizAttempts": [
+      {
+        "id": "qa1",
+        "quizId": "q1",
+        "studentId": "s1",
+        "submittedAt": "2026-11-15",
+        "answers": [
+          3,
+          1,
+          1
+        ],
+        "score": 15,
+        "maxScore": 15
+      },
+      {
+        "id": "qa2",
+        "quizId": "q1",
+        "studentId": "s2",
+        "submittedAt": "2026-11-15",
+        "answers": [
+          3,
+          0,
+          1
+        ],
+        "score": 10,
+        "maxScore": 15
+      }
+    ],
+    "attendance": [
+      {
+        "studentId": "s1",
+        "date": "2026-11-16",
+        "status": "Present",
+        "markedBy": "Prof. Sarah Jenkins"
+      },
+      {
+        "studentId": "s2",
+        "date": "2026-11-16",
+        "status": "Present",
+        "markedBy": "Prof. Sarah Jenkins"
+      },
+      {
+        "studentId": "s3",
+        "date": "2026-11-16",
+        "status": "Late",
+        "markedBy": "Prof. Sarah Jenkins"
+      },
+      {
+        "studentId": "s4",
+        "date": "2026-11-16",
+        "status": "Present",
+        "markedBy": "Mr. Daniyal Malik"
+      },
+      {
+        "studentId": "s5",
+        "date": "2026-11-16",
+        "status": "Absent",
+        "markedBy": "Mr. Daniyal Malik"
+      },
+      {
+        "studentId": "s6",
+        "date": "2026-11-16",
+        "status": "Unmarked"
+      },
+      {
+        "studentId": "s7",
+        "date": "2026-11-16",
+        "status": "Unmarked"
+      },
+      {
+        "studentId": "s8",
+        "date": "2026-11-16",
+        "status": "Present",
+        "markedBy": "Ms. Elena Rostova"
+      },
+      {
+        "studentId": "s1",
+        "date": "2026-11-15",
+        "status": "Absent",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s2",
+        "date": "2026-11-15",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s3",
+        "date": "2026-11-15",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s4",
+        "date": "2026-11-15",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s5",
+        "date": "2026-11-15",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s6",
+        "date": "2026-11-15",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s7",
+        "date": "2026-11-15",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s8",
+        "date": "2026-11-15",
+        "status": "Late",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s1",
+        "date": "2026-11-14",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s2",
+        "date": "2026-11-14",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s3",
+        "date": "2026-11-14",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s4",
+        "date": "2026-11-14",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s5",
+        "date": "2026-11-14",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s6",
+        "date": "2026-11-14",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s7",
+        "date": "2026-11-14",
+        "status": "Late",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s8",
+        "date": "2026-11-14",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s1",
+        "date": "2026-11-13",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s2",
+        "date": "2026-11-13",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s3",
+        "date": "2026-11-13",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s4",
+        "date": "2026-11-13",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s5",
+        "date": "2026-11-13",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s6",
+        "date": "2026-11-13",
+        "status": "Late",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s7",
+        "date": "2026-11-13",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s8",
+        "date": "2026-11-13",
+        "status": "Absent",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s1",
+        "date": "2026-11-12",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s2",
+        "date": "2026-11-12",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s3",
+        "date": "2026-11-12",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s4",
+        "date": "2026-11-12",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s5",
+        "date": "2026-11-12",
+        "status": "Late",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s6",
+        "date": "2026-11-12",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s7",
+        "date": "2026-11-12",
+        "status": "Absent",
+        "markedBy": "Faculty Portal"
+      },
+      {
+        "studentId": "s8",
+        "date": "2026-11-12",
+        "status": "Present",
+        "markedBy": "Faculty Portal"
+      }
+    ],
+    "fees": [
+      {
+        "id": "f1",
+        "invoiceNo": "INV-2026-1001",
+        "studentId": "s1",
+        "category": "Tuition",
+        "amount": 350,
+        "dueDate": "2026-11-06",
+        "status": "Paid",
+        "description": "Term 1 Tuition Fee",
+        "paidAt": "2026-11-04",
+        "paymentRef": "TXN-981204"
+      },
+      {
+        "id": "f2",
+        "invoiceNo": "INV-2026-1002",
+        "studentId": "s1",
+        "category": "Lab",
+        "amount": 65,
+        "dueDate": "2026-11-24",
+        "status": "Due",
+        "description": "Optics & Science Lab Kit"
+      },
+      {
+        "id": "f3",
+        "invoiceNo": "INV-2026-1003",
+        "studentId": "s2",
+        "category": "Tuition",
+        "amount": 350,
+        "dueDate": "2026-11-21",
+        "status": "Due",
+        "description": "Term 1 Tuition Fee"
+      },
+      {
+        "id": "f4",
+        "invoiceNo": "INV-2026-1004",
+        "studentId": "s3",
+        "category": "Library",
+        "amount": 45,
+        "dueDate": "2026-11-10",
+        "status": "Overdue",
+        "description": "Science Reference Deposit"
+      },
+      {
+        "id": "f5",
+        "invoiceNo": "INV-2026-1005",
+        "studentId": "s4",
+        "category": "Tuition",
+        "amount": 380,
+        "dueDate": "2026-11-04",
+        "status": "Paid",
+        "description": "Term 1 Tuition Fee",
+        "paidAt": "2026-11-02",
+        "paymentRef": "TXN-981190"
+      },
+      {
+        "id": "f6",
+        "invoiceNo": "INV-2026-1006",
+        "studentId": "s5",
+        "category": "Tuition",
+        "amount": 380,
+        "dueDate": "2026-11-13",
+        "status": "Overdue",
+        "description": "Term 1 Tuition Fee"
+      },
+      {
+        "id": "f7",
+        "invoiceNo": "INV-2026-1007",
+        "studentId": "s6",
+        "category": "Transport",
+        "amount": 120,
+        "dueDate": "2026-11-26",
+        "status": "Due",
+        "description": "Campus Bus Route B"
+      },
+      {
+        "id": "f8",
+        "invoiceNo": "INV-2026-1008",
+        "studentId": "s7",
+        "category": "Tuition",
+        "amount": 400,
+        "dueDate": "2026-11-07",
+        "status": "Paid",
+        "description": "Term 1 Tuition Fee",
+        "paidAt": "2026-11-06",
+        "paymentRef": "TXN-981332"
+      },
+      {
+        "id": "f9",
+        "invoiceNo": "INV-2026-1009",
+        "studentId": "s8",
+        "category": "Exam",
+        "amount": 85,
+        "dueDate": "2026-11-28",
+        "status": "Due",
+        "description": "Annual STEM Assessment Fee"
+      }
+    ],
+    "timetable": [
+      {
+        "id": "tt1",
+        "day": "Monday",
+        "startTime": "08:30",
+        "endTime": "09:15",
+        "subject": "Optics & Physical Science",
+        "className": "5A",
+        "teacherName": "Prof. Sarah Jenkins",
+        "room": "Lab 201"
+      },
+      {
+        "id": "tt2",
+        "day": "Monday",
+        "startTime": "09:30",
+        "endTime": "10:15",
+        "subject": "Geometry & Proportions",
+        "className": "5A",
+        "teacherName": "Ms. Elena Rostova",
+        "room": "Room 104"
+      },
+      {
+        "id": "tt3",
+        "day": "Tuesday",
+        "startTime": "08:30",
+        "endTime": "09:15",
+        "subject": "Computational Thinking",
+        "className": "6B",
+        "teacherName": "Mr. Daniyal Malik",
+        "room": "CS Lab 1"
+      },
+      {
+        "id": "tt4",
+        "day": "Tuesday",
+        "startTime": "10:30",
+        "endTime": "11:15",
+        "subject": "Optics & Physical Science",
+        "className": "5A",
+        "teacherName": "Prof. Sarah Jenkins",
+        "room": "Lab 201"
+      },
+      {
+        "id": "tt5",
+        "day": "Wednesday",
+        "startTime": "09:30",
+        "endTime": "10:15",
+        "subject": "Geometry & Proportions",
+        "className": "5A",
+        "teacherName": "Ms. Elena Rostova",
+        "room": "Room 104"
+      },
+      {
+        "id": "tt6",
+        "day": "Thursday",
+        "startTime": "08:30",
+        "endTime": "09:15",
+        "subject": "Optics & Physical Science",
+        "className": "5A",
+        "teacherName": "Prof. Sarah Jenkins",
+        "room": "Lab 201"
+      },
+      {
+        "id": "tt7",
+        "day": "Thursday",
+        "startTime": "11:30",
+        "endTime": "12:15",
+        "subject": "Computational Thinking",
+        "className": "6B",
+        "teacherName": "Mr. Daniyal Malik",
+        "room": "CS Lab 1"
+      },
+      {
+        "id": "tt8",
+        "day": "Friday",
+        "startTime": "09:30",
+        "endTime": "10:15",
+        "subject": "STEM Synthesis Seminar",
+        "className": "5A",
+        "teacherName": "Ms. Elena Rostova",
+        "room": "Auditorium"
+      }
+    ],
+    "announcements": [
+      {
+        "id": "ann1",
+        "title": "Term 1 STEM Exhibition & Parent Showcase",
+        "body": "Parents and guardians are invited to visit the Science & Robotics Gallery this Friday from 10:00 AM to 1:00 PM in the Main Hall.",
+        "audience": "All",
+        "author": "Principal Office",
+        "createdAt": "2026-11-15",
+        "priority": "Normal"
+      },
+      {
+        "id": "ann2",
+        "title": "Term 1 Lab & Tuition Fee Reminder",
+        "body": "Please settle pending Term 1 invoices via the Fee Ledger portal before the end of the month to ensure uninterrupted LMS exam access.",
+        "audience": "Parents",
+        "author": "Accounts Department",
+        "createdAt": "2026-11-14",
+        "priority": "Urgent"
+      },
+      {
+        "id": "ann3",
+        "title": "Class 5A Optics Checkpoint Quiz Live",
+        "body": "Students in Class 5A can now complete the 10-minute Optics & Light Checkpoint Quiz inside the Assessments module.",
+        "audience": "Students",
+        "author": "Prof. Sarah Jenkins",
+        "createdAt": "2026-11-16",
+        "priority": "Normal"
+      }
+    ],
+    "auditLog": [
+      {
+        "id": "aud-1794858689778-t40k",
+        "timestamp": "2026-11-16T19:51:29.778Z",
+        "actorRole": "Admin",
+        "actorName": "System Administrator",
+        "action": "DATABASE_RESET",
+        "target": "Full demo reset"
+      },
+      {
+        "id": "aud1",
+        "timestamp": "2026-11-16T18:51:29.778Z",
+        "actorRole": "Admin",
+        "actorName": "System Administrator",
+        "action": "INITIALIZED_TENANT",
+        "target": "Mustafai School System (2026–2027)"
+      },
+      {
+        "id": "aud2",
+        "timestamp": "2026-11-16T19:21:29.778Z",
+        "actorRole": "Teacher",
+        "actorName": "Prof. Sarah Jenkins",
+        "action": "GRADED_SUBMISSION",
+        "target": "Alice Johnson · Prism Dispersion Observation Report (24/25)"
+      }
+    ]
+  }
+}
